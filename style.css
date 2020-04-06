@@ -100,7 +100,7 @@ section{
 
 } 
 .add-task input::placeholder{
-    color: teal;
+    color: #cfcfcf;
     
 }
 
@@ -165,12 +165,11 @@ ul{
 
 .task {
     display: flex;
-    width: 70%;
+    width: 80%;
     height: auto;
     background-color: rgb(250, 245, 245);
     align-items: center;    
     margin-top: 30px;
-    box-shadow:  1px 1px 5px;
     border-radius: 5px;
     position: relative;
 }
@@ -182,6 +181,8 @@ ul{
 }
 .task label{
     display: flex;
+    height: 100%;
+    width: 100%;
     align-items: center;
     padding-left: 30px;
     cursor: pointer;
@@ -191,6 +192,7 @@ ul{
     display: inline-block;
     width: 20px;
     height: 20px;
+    border-radius: 50%;
     vertical-align: middle;
     background-color: #ccc;
     margin-left: -10px;
@@ -201,8 +203,8 @@ ul{
 
 .task input[type="checkbox"]:checked + label::before{
     background-color: blueviolet;
-    border-radius: 50%;    
-    background-image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTEuOTk5IDUxMS45OTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMS45OTkgNTExLjk5OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwNi4yMzEsNzUuNTA4Yy03LjY4OS03LjY5LTIwLjE1OC03LjY5LTI3Ljg0OSwwbC0zMTkuMjEsMzE5LjIxMUwzMy42MTcsMjY5LjE2M2MtNy42ODktNy42OTEtMjAuMTU4LTcuNjkxLTI3Ljg0OSwwICAgIGMtNy42OSw3LjY5LTcuNjksMjAuMTU4LDAsMjcuODQ5bDEzOS40ODEsMTM5LjQ4MWM3LjY4Nyw3LjY4NywyMC4xNiw3LjY4OSwyNy44NDksMGwzMzMuMTMzLTMzMy4xMzYgICAgQzUxMy45MjEsOTUuNjY2LDUxMy45MjEsODMuMTk4LDUwNi4yMzEsNzUuNTA4eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo");
+    border-radius: 50%; 
+    background-image: url('foursquare-check-in.png');   
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;  
@@ -213,12 +215,14 @@ ul{
     color:#b6b6b0;
 }
 
-.task label span{
-    
-    height: inherit;
-    width: 70%;
+.task label span{    
+    height: auto;
+    min-height: 100px;
+    width: 80%;
     font-size: 28px;
-    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
     transition: .4s all;
     
 }
@@ -246,7 +250,6 @@ ul{
 
     .task label span{
         font-size: 18px;
-        hyphens: auto;
         width: 60%;
         
        
